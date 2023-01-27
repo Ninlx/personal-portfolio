@@ -1,0 +1,30 @@
+:root {
+  --font-neonblitz: "Neonblitz";
+  --font-racespace-reg: "Racespace Reglr";
+  --font-racespace-strp: "Racespace Strp";
+  --font-terabite: "Terabite";
+  --font-tetillium: "Titillium";
+  --font-tetillium-lit: "Titillium Lit";
+  --font-tetillium-bld: "Titillium Bld";
+
+  --primary: #528ce4;
+  --light: #f8f9fa;
+  --grey: #6c757d;
+  --orange: #ffc107;
+  --danger: #dc3545;
+  --dark: #212529;
+
+  --primary-background: linear-gradient(225deg, #ffd89b 10%, #19547b 70%);
+  --secondary-background: linear-gradient(45deg, #ffd89b 10%, #19547b 70%);
+  --focus-background: linear-gradient(45deg, #ffd89b 10%, #dc3545 70%);
+
+  --btn-hover-boxshadow: rgba(0, 0, 0, 0.099) 6px 8px 8px 0px,
+    rgba(0, 0, 0, 0.099) 6px 8px 8px 0px, rgba(0, 0, 0, 0.099) -6px 8px 8px 0px,
+    rgba(0, 0, 0, 0.099) -6px 8px 8px 0px;
+  --btn-focus-boxshadow: rgba(0, 0, 0, 0.099) 0px 8px 8px 0px,
+    rgba(0, 0, 0, 0.099) 0px 8px 8px 0px;
+
+  --card-boxshadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

@@ -1,0 +1,111 @@
+@use "../util" as *;
+
+#main {
+  background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+  background-size: cover;
+  backdrop-filter: brightness(50%);
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: em(9.75) 9.25% !important;
+    background: url(/img/header.PNG) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    transition: all 300ms;
+    transition-property: background, background-size, background-position,
+      background-repeat;
+    transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    z-index: 100;
+
+    &__brand {
+      font-family: var(--font-terabite);
+
+      a {
+        font-size: em(45.25);
+        font-weight: bolder;
+        letter-spacing: em(0.95);
+        color: cyan;
+      }
+    }
+
+    &__navbar {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100vh;
+      clip-path: circle(0% at 50% 50%);
+      transition: all 500ms;
+      transition-property: clip-path;
+      transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+        background-size: cover;
+        backdrop-filter: 50%;
+        filter: hue-rotate(45deg) blur(em(2.25)) grayscale(0.35);
+      }
+
+      ul {
+        li {
+          display: block;
+
+          &:not(:last-child) {
+            margin-bottom: em(30);
+          }
+
+          a {
+            position: relative;
+            font-family: var(--font-terabite);
+            font-size: em(30.75);
+            letter-spacing: em(2);
+            text-transform: uppercase;
+            color: cyan;
+            transition: 200ms;
+            transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 0;
+              transform: scaleX(0);
+              transform-origin: right;
+              width: 100%;
+              height: em(0.125);
+              background: cyan;
+              transition: transform 400ms;
+              transition-timing-function: cubic-bezier(
+                0.6,
+                -0.28,
+                0.735,
+                0.045
+              );
+            }
+
+            &:hover::after {
+              transform-origin: left;
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+
+    .header__navbar.show {
+      clip-path: circle(100% at 50% 50%);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@use "../util" as *;
+
+#main .about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    h1 {
+      font-family: var(--font-terabite);
+      font-size: em(55);
+      line-height: 0.9;
+      letter-spacing: em(2);
+      color: cyan;
+      max-width: em(75);
+      margin-top: em(40.25);
+    }
+
+    p {
+      font-family: var(--font-titillium);
+      color: cyan;
+      max-width: em(600);
+    }
+  }
+
+  &__image {
+    max-width: em(550);
+  }
+}

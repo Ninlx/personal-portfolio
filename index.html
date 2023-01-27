@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Personal Portfolio | JDM Frontend Web Developer</title>
+    <!-- seo -->
+    <meta name="author" content="JDM Frontend Web Developer">
+    <meta name="keywords" content="Personal Portfolio | JDM Frontend Web Developer">
+    <meta name="description" content="freelancing, freelancer, freelancer portfolio, freelancing portfolio, personal portfolio, business portfolio, personal portfolio for development, web development portfolio, web developer, jdm web designer, jdm website designer, jdm frontend web developer, website developer, web development, frontend developer, wev development programming, web development coding, frontend web design, website frontend web designer, jdm frontend web developer, jdm website developer, jdm web developer, junior web developer, frontend developer">
+    <!-- social media meta -->
+    <meta property="og:description" content="Personal Portfolio | JDM Frontend Web Developer">
+    <meta property="og:image" content="http://www.rakktravelphilippines.pages.dev">
+    <meta property="og:site_name" content="JDM Frontend Web Developer">
+    <meta property="og:title" content="JDM Frontend Web Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.rakktravelphilippines.pages.dev">
+    <!-- twitter meta -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@JDM Frontend Web Developer">
+    <meta name="twitter:creator" content="@JDM Frontend Web Developer">
+    <meta name="twitter:title" content="JDM Frontend Web Developer">
+    <meta name="twitter:description" content="Personal Portfolio | JDM Frontend Web Developer">
+    <meta name="twitter:image" content="http://www.rakktravelphilippines.pages.dev">
+    <!-- cdn file link -->
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="ico/apple-touch-icon-sm.png" type="image/x-icon">
+    <link rel="shortcut icon" href="ico/apple-touch-icon-57.png" type="image/x-icon">
+    <link rel="shortcut icon" href="ico/apple-touch-icon-72.png" type="image/x-icon">
+    <link rel="shortcut icon" href="ico/apple-touch-icon-114.png" type="image/x-icon">
+    <link rel="shortcut icon" href="ico/apple-touch-icon-144.png" type="image/x-icon">
+    <!-- css file link -->
+    <link rel="stylesheet" href="plugins/css/lineicons.css">
+    <link rel="stylesheet" href="plugins/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/css/fontawesome.min.css">
+    <link rel="stylesheet" href="dist/app.css">
+    <!-- js file link -->
+    <script defer src="plugins/js/particles.js"></script>
+    <script defer src="plugins/js/bootstrap.min.js"></script>
+    <script defer src="plugins/js/fontawesome.min.js"></script>
+    <script defer src="plugins/js/tweenmax.min.js"></script>
+    <script defer src="plugins/js/solid.min.js"></script>
+    <script defer src="plugins/js/brands.min.js"></script>
+    <script defer src="plugins/js/regular.min.js"></script>
+    <script defer src="plugins/js/jquery.min.js"></script>
+    <script defer src="plugins/js/smooth-scrollbar.min.js"></script>
+    <script defer src="plugins/js/overscroll.min.js"></script>
+    <script defer src="dist/app.js"></script>
+  </head>
+  <body>
+    <div class="cursor cursor__conn"></div>
+    <div class="preloader">
+      <div class="loadbar"></div>
+      <figure><span class="text-uppercase">portfolio is loading</span><img style="width: 300px; height: 300px;" src="img/preloader.png" alt="Preloader"></figure>
+    </div>
+    <main class="main" id="main" style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; overflow: auto;">
+      <header class="header d-flex align-items-center justify-content-center" id="header">
+        <div class="header__brand me-auto">
+          <a href="" class="text-uppercase">portpolio</a>
+        </div>
+        <nav class="header__navbar d-flex align-items-center justify-content-center">
+          <div class="particles-js" id="particles-js" style="width: 100%; height: 100vh; position: absolute;"></div>
+            <ul class="header__nav m-0 p-0 text-center list-unstyled">
+              <li class="header__items function">
+                <a href="" class="header__links">home</a>
+              </li>
+              <li class="header__items">
+                <a href="#product" class="header__links">product</a>
+              </li>
+              <li class="header__items">
+                <a href="#service" class="header__links">service</a>
+              </li>
+              <li class="header__items">
+                <a href="#about" class="header__links">about</a>
+              </li>
+              <li class="header__items">
+                <a href="#blogs" class="header__links">blogs</a>
+              </li>
+              <li class="header__items">
+                <a href="#contact" class="header__links">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger">
+            <button class="hamburger__menu">
+            <svg width="70" height="55" viewBox="0 0 100 100">
+              <path class="hamburger__line hamburger__line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="hamburger__line hamburger__line2" d="M 20,50 H 80" />
+              <path class="hamburger__line hamburger__line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+            </button>
+          </div>
+        </header>
+        <section class="banner">
+          <div class="banner__container">
+            <div class="banner__row">
+              <div class="col-md-12 col-lg-12 col-xl-6">
+                <div class="banner__text">
+                  <h3 class="banner__sub">hey</h3>
+                  <h1 class="banner__title">i am <span>j</span><span>e</span><span>f</span><span>f</span></h1>
+                  <h3 class="banner__des">frontend web developer</h3>
+                  <a target="_blank" href="https://www.facebook.com/jeffern.malinao.90/" class="link__button text-uppercase">follow me</a>                
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-12 col-xl-6">
+                <div class="banner__canvas" id="cnvscntnr">
+                  <canvas></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <div class="about__text">
+                  <h1 class="text-uppercase mb-4">let me introduce myself</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam facere voluptate dolore delectus in?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, perspiciatis nam? Architecto aliquid aperiam eaque tempore nisi vero neque quidem.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="img-fluid">
+                  <figure><img src="img/about__bckgrnd.svg" alt="About"></figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="branding" id="branding">
+          <div class="container branding__container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo1.png" alt="Brand" class="brand"></figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo2.png" alt="Brand" class="brand"></figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo3.png" alt="Brand" class="brand"></figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo4.png" alt="Brand" class="brand"></figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo5.png" alt="Brand" class="brand"></figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo6.png" alt="Brand" class="brand"></figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo7.png" alt="Brand" class="brand"></figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo8.png" alt="Brand" class="brand"></figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-4 branding__column">
+                    <figure><img src="img/brands/logo9.png" alt="Brand" class="brand"></figure>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="branding__right">
+                  <figure><img src="img/client-info-bg.png" alt="Brand Image" class="img-fluid"></figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+  </body>
+</html>
